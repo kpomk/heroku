@@ -45,7 +45,7 @@ class TasksController < ApplicationController
     
     if @task.update(task_params)
       flash[:success] = 'Taskは正常に更新されました'
-      redirect_to  
+      redirect_to  root_url
       #@correct_user()root_url
       
     else
